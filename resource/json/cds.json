@@ -1,0 +1,35 @@
+{
+	"title":"跨境电商报关管理系统",
+	"keywords":"数据查询,系统,webBase,SQL",
+	"description":"跨境电商报关管理系统为电商企业提供报关申报、海关回执接收处理、电子税单接收处理、海关保证金虚拟扣税等业务功能，并能够通过与属地海关保税监管辅助管理系统的对接，实现快递物流车辆出保税区的自动核放。。",
+	"bgimg":"_intro_bg.jpg",
+	"data":[
+		{
+			"title":"跨境电商报关管理系统",
+			"subTitle":"",
+			"disType":"list",
+			"description":[
+				"解决电商企业的通关问题，并预留了与进出口检验检疫局的报检接口，提升了保税区内仓储企业为电商服务的能力。"
+			],
+			"img":"KJ_shouye.png"
+		},
+		{
+			"title":"三单合一",
+			"subTitle":"",
+			"disType":"list",
+			"description":[
+				"将商品订单信息/物流信息/支付信息三单信息汇总，完成向海关及商检部门汇总申报。"
+			],
+			"img":"KJ_qingdan.png"
+		},
+		{
+			"title":"海关保证金虚拟扣税业务功能",
+			"subTitle":"",
+			"disType":"list",
+			"description":[
+				"报关申报/海关回执接收处理/电子税单接收处理/海关保证金虚拟扣税等业务功能。"
+			],
+			"img":"KJ_shuishou.png"
+		}		
+	]
+}

@@ -1,0 +1,139 @@
+.contentSection
+{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navBar
+{
+    position: absolute;
+    z-index: 10;
+
+    width: 100%;
+    padding: 14px 0;
+}
+.navBar ul
+{
+    font-size: 0;
+
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navBar li
+{
+    font-size: 14px;
+
+    display: inline-block;
+
+    width: 33.333%;
+
+    list-style: none;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.footer
+{
+    min-height: 220px;
+    padding-top: 30px;
+
+    background-color: #373d41;
+}
+.footer .leftRow
+{
+    float: left;
+
+    box-sizing: border-box;
+    width: 280px;
+    padding: 0 14px;
+
+    border-right: 1px solid #4b5054;
+}
+.footer .leftRow h4
+{
+    font-size: 16px;
+
+    height: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: #d7d8d9;
+}
+.footer .leftRow h3
+{
+    font-size: 20px;
+
+    height: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: #fff;
+}
+.footer .leftRow .list
+{
+    padding: 14px 0;
+}
+.footer .leftRow .list li,
+.footer .rightRow .list li
+{
+    font-size: 14px;
+
+    list-style: none;
+
+    -webkit-transition: color .3s;
+            transition: color .3s;
+
+    color: #9b9ea0;
+}
+.footer .leftRow .list li a,
+.footer .rightRow .list li a
+{
+    color: #9b9ea0;
+}
+.footer .leftRow .list li:hover,
+.footer .leftRow .list li a:hover,
+.footer .rightRow .list li:hover,
+.footer .rightRow .list li a:hover
+{
+    text-decoration: none;
+
+    color: #28d0e9!important;
+}
+
+.footer .rightRow
+{
+    float: left;
+
+    box-sizing: border-box;
+    width: 920px;
+    padding-left: 100px;
+}
+.footer .rightRow .footNavList
+{
+    float: left;
+
+    box-sizing: border-box;
+    width: 25%;
+}
+.footer .rightRow .footNavList h4
+{
+    font-size: 16px;
+
+    height: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: #d7d8d9;
+}
+
+.footer .rightRow .copyright
+{
+    font-size: 14px;
+
+    margin-top: 10px;
+
+    color: #73777a;
+}

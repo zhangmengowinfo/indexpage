@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh" ng-app="app" ng-controller="mainController">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="{{data.keywords}}">
+    <meta name="description" content="{{data.description}}">
+    <title>北京联众信安科技有限公司</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/detail.css">
+    <link rel="stylesheet" href="/css/common.css">
+</head>
+<body>
+    <div class="header">
+        <!-- <div class="navBar">
+            <ul>
+                <li>导航一</li>
+                <li>导航二</li>
+                <li>导航三</li>
+            </ul>
+        </div> -->
+        <div class="headerContent" id="headerContent" bg-img="{{data.bgimg}}">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-12">
+        				<div class="title text-center">
+			        		<h1 id="mainTitle" ng-bind="data.title"></h1>
+			        	</div>
+			        	<div class="briefDescription text-center">
+			        		<p ng-bind="data.description"></p>
+			        	</div>
+        			</div>
+        			
+        		</div>
+        	</div>
+        	
+        	
+        </div>
+    </div>
+    <div class="content">
+    	<div class="section-odd" ng-repeat="data in data.data" ng-class="{'section-odd':$index%2 == 0,'section-even':$index%2 != 0}">
+    		<div class="container">
+    			<div class="row">
+    				<div>
+    					<div class="header" ng-bind="data.title"></div>
+                        <p class="subHeader" ng-bind="data.subTitle">
+                        </p>
+    				</div>
+    				<div class="col-md-6" ng-if="$index%2 ==0">
+    					<img ng-src="/resource/img/{{data.img}}" alt="">
+    				</div>
+    				<div class="col-md-6">
+    					<p class="descript">
+                            <ul>
+                                <li ng-repeat="data1 in data.description track by $index" ng-bind="data1"></li>
+                                
+                            </ul>
+    					</p>
+                        
+    				</div>
+                    <div class="col-md-6" ng-if="$index%2 !=0">
+                        <img ng-src="/resource/img/{{data.img}}" alt="">
+                    </div>
+    			</div>
+    		</div>
+    	</div>
+    	<!-- <div class="section-even">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<div class="header">
+	    					模块标题
+	    				</div>
+	    				<div class="col-md-6">
+	    					<p class="descript">
+	    						用于工程、项目群宏观管理，覆盖需求范围、项目主数据、采购、软件资产、文档库、专家库、供应商等管理工作。并有微信辅助应用。客户包括中国海关，最高人民检察院。
+	    					</p>
+	    				</div>
+	    				<div class="col-md-6">
+	    					<img src="/resource/img/goods-2.png" alt="">
+	    				</div>
+    				</div>
+    				
+    			</div>
+    		</div>
+    	</div> -->
+    </div>
+    <div class="footer">
+        <div class="footerContainer contentSection">
+            <div class="leftRow">
+                <h4>行业解决方案</h4>
+                <h3>行业架构师咨询</h3>
+                <div class="list">
+                    <ul class="clearPadding">
+                        <li><a href="javascript:;">成熟解决方案</a></li>
+                        <li><a href="javascript:;">专业架构师解决方案</a></li>
+                        <li><a href="javascript:;">成功客户案例分享</a></li>
+                        <li><a href="javascript:;">专属定制服务</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightRow">
+                <div class="list">
+                    <div class="footNavList">
+                        <h4>服务与支持</h4>
+                        <ul>
+                            <li><a href="javascript:;">服务1</a></li>
+                            <li><a href="javascript:;">服务2</a></li>
+                            <li><a href="javascript:;">支持1</a></li>
+                            <li><a href="javascript:;">支持2</a></li>
+                        </ul>
+                    </div>
+                    <div class="footNavList">
+                        <h4>解决方案</h4>
+                        <ul>
+                            <li><a href="javascript:;">服务1</a></li>
+                            <li><a href="javascript:;">服务2</a></li>
+                            <li><a href="javascript:;">支持1</a></li>
+                            <li><a href="javascript:;">支持2</a></li>
+                        </ul>
+                    </div>
+                    <div class="footNavList">
+                        <h4>其他</h4>
+                        <ul>
+                            <li><a href="javascript:;">服务1</a></li>
+                            <li><a href="javascript:;">服务2</a></li>
+                            <li><a href="javascript:;">支持1</a></li>
+                            <li><a href="javascript:;">支持2</a></li>
+                        </ul>
+                    </div>
+                    <div class="footNavList">
+                        <h4>关于联众信安</h4>
+                        <ul>
+                            <li><a href="javascript:;">联系我们</a></li>
+                            <li><a href="javascript:;">加入我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="copyright">
+                  © 2009-2017 owinfo.net 版权所有 ICP证：京 123456789
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script>
+    if (!document.addEventListener) {
+        // IE6~IE8
+        document.write('<script src="/js/jquery-1.11.1.min.js"><\/script>'); 
+    }else{
+        document.write('<script src="/js/jquery.min.js"><\/script>'); 
+    }
+</script>
+<!--[if lt IE 9]>
+	<script src="/js/html5shiv.min.js"></script>
+	<script src="/js/respond.min.js"></script>
+<![endif]-->
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/angular.min.js"></script>
+<script src="/js/detail.js"></script>
+<script src="/js/app.js"></script>
+</html>

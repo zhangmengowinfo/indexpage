@@ -1,0 +1,63 @@
+.headerContent
+{
+    background: #f5f6f6 url('/resource/img/_intro_bg.jpg') center no-repeat;
+}
+.headerContent .title,
+.headerContent .briefDescription
+{
+    color: #fff;
+}
+.headerContent .title
+{
+    margin-top: 20%;
+}
+.headerContent .briefDescription
+{
+    margin-top: 3%;
+    max-width: 855px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-odd,
+.section-even
+{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 600px;
+}
+.section-odd img,.section-even img{
+	width: 100%;
+}
+.section-odd
+{
+    background: #fff;
+    color: #000000;
+}
+.section-even
+{
+    background: #f5f6f6;
+    color: #000000;
+}
+.section-odd .header,.section-even .header{
+	margin-bottom: 44px;
+	margin-top: 24px;
+    font-size: 58px;
+    text-align: center;
+}
+.section-odd .subHeader,.section-even .subHeader{
+    margin-bottom: 44px;
+    margin-top: 24px;
+    font-size: 18px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.section-odd .descript,.section-even .descript{
+	color: #808080;
+	line-height: 20px;
+	font-size: 16px;
+	margin-top: 10%;
+}
+
